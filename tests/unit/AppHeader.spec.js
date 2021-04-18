@@ -22,6 +22,6 @@ describe('AppHeader', () => {
   it('deve conter o texto logout dentro do botão', () => {
     const wrapper = mount(AppHeader)
     const text = wrapper.find('button').element.textContent
-    expect(text).toContain('LoSagout')
+    expect(text).toContain('Logout')
   })
 });
