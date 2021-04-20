@@ -34,19 +34,11 @@ describe('RegisterForm', () => {
 
   it('é um instancia do vue', () => {
     const wrapper = mount(RegisterForm);
-
-    const inputName = wrapper.find('input[id="name"]');
-    const inputEmail = wrapper.find('input[id="email"]');
-    const inputAge = wrapper.find('input[id="age"]');
-    const inputPassword = wrapper.find('input[id="password"]');
-
-    inputName.setValue('Gabriel Caiana Guedes');
-    inputEmail.setValue('gabrielcaianaguedes@gmail.com');
-    inputAge.setValue('27/11/1996');
-    inputPassword.setValue('123456');
-
-    wrapper.trigger('submit');
-    
     expect(wrapper.isVueInstance()).toBe(true);
+  });
+
+  it('verificando se existe o botão submit', () => {
+    const wrapper = mount(RegisterForm);
+    expect(wrapper.contains('button[type="submit"]')).toBe(true);
   });
 });

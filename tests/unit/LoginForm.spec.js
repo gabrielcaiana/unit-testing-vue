@@ -5,7 +5,7 @@ describe('LoginForm', () => {
   it('emite um evento com um payload de dados do usuário', () => {
     const wrapper = mount(LoginForm);
     const inputEmail = wrapper.find('input[id="email"]');
-    const inputPassword = wrapper.find('input[id="password"]');
+    const inputPassword = wrapper.find('input[id="password"]')
 
     inputEmail.setValue('gabrielcaianaguedes@gmail.com'); // Set value for text input
     inputPassword.setValue('123456');

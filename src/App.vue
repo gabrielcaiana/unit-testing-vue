@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/app-header">Header</router-link> |
+      <router-link to="/login-form">Login Form</router-link> |
+      <router-link to="/message-display">Message Display</router-link> |
+      <router-link to="/random-number">Random Number</router-link> |
+      <router-link to="/register-form">Register Form</router-link>
     </div>
     <router-view />
   </div>
